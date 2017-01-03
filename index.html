@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>Weather API</title>
+	<meta name="viewport" content="width=width-device, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="weatherAPI.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.js"></script>
+</head>
+<body>
+	<div class="outerContainer">
+		<div class="container">
+			<div class="row text-center">
+				<div class="header">
+					<h1>Free Code Camp Zipline</h1>
+					<h3>Local Weather App</h3>
+					<input class="form-control entry" type="text" placeholder="City or Zip">
+					<button class="btn btn-primary btn-block toCelsius">Celsius</button>
+					<button class="btn btn-primary btn-block toFahrenheit">Fahrenheit</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="header">
+					<div class="weather text-center">
+						<p class="city"></p>
+						<p class="temp"></p>
+					</div>
+				</div>
+			</div>
+			<div class="row info">
+				<div class="col-xs-6 col-md-3">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<div class="panel-title">
+								Winds
+							</div>
+						</div>
+						<div class="panel-body">
+							<p class="wind"></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<div class="panel-title">
+								Pressure
+							</div>
+						</div>
+						<div class="panel-body">
+							<p class="pressure"></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<div class="panel-title">
+								Humidity
+							</div>
+						</div>
+						<div class="panel-body">
+							<p class="humidity"></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<div class="panel-title">
+								Weather
+							</div>
+						</div>
+						<div class="panel-body">
+							<p class="desc"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="weather.js"></script>
+</body>
+</html>
